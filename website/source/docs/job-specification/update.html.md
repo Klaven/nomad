@@ -92,6 +92,10 @@ job "docs" {
   last stable job on deployment failure. A job is marked as stable if all the
   allocations as part of its deployment were marked healthy.
 
+- `auto_promote` `(bool: false)` - Specifies if the job should auto-revert to the
+  last stable job on deployment failure. A job is marked as stable if all the
+  allocations as part of its deployment were marked healthy.
+
 - `canary` `(int: 0)` - Specifies that changes to the job that would result in
   destructive updates should create the specified number of canaries without
   stopping any previous allocations. Once the operator determines the canaries
